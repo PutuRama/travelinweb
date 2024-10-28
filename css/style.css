@@ -11,3 +11,25 @@
 	font-family: "play-fair-display";
 	src: url(../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
 }
+
+h5,
+h2 {
+	font-family: "play-fair-display";
+}
+
+
+.tur-guide .card {
+	background-color: #029e9d;
+	color: white;
+}
+
+.Judultur-guide {
+	color: #029e9d;
+	font-family: "play-fair-display";
+}
+
+
+.warnatur-guide {
+	color: #fdc703;
+	font-family: "play-fair-display";
+}
