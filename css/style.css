@@ -12,13 +12,19 @@
 	src: url(../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
-.kumpulangambar {}
-
-.kotak img {
-	width: 100%
+.kumpulangambar {
+	position: relative;
 }
 
 .kotak {
 	position: relative;
-
+}
+.kotak img {
+	width: 100%;
+	object-fit: cover;
+}
+.top-lokasi-txt {
+	position: absolute;
+	z-index: 2;
+	top: 0;
 }
