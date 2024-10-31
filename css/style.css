@@ -33,14 +33,17 @@
 		right: 100%;
 		left: auto;
 	}
-	/* .dropdown-menu > li:hover > .dropdown__submenu {
+
+	.dropdown-menu > li:hover > .dropdown__submenu {
 		display: block;
-	} */
-	/* li:hover > .dropdown-menu {
+	}
+	.nav-item.dropdown:hover .dropdown-mainmenu {
 		display: block;
-	} */
+	}
 }
 
-li:focus > .dropdown__submenu {
-	display: block;
-}
+/* @media (min-width: 992px) {
+	.nav-item.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+} */
