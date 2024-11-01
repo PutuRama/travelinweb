@@ -12,6 +12,29 @@
 	src: url(../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
+h5,
+h2,
+h3 {
+	font-family: "play-fair-display";
+}
+
+.Judultur-guide {
+	color: #029e9d;
+	font-family: "play-fair-display";
+
+}
+
+.warna-biru-biasa {
+	color: #029e9d;
+
+}
+
+.warnatur-guide,
+.fa-star {
+	color: #fdc703;
+
+}
+
 .kumpulangambar {
 	overflow: hidden;
 }
@@ -19,16 +42,105 @@
 .kotak {
 	position: relative;
 }
+
 .kotak img {
 	width: 100%;
 	border-radius: 10px;
 }
+
 .top-lokasi-txt {
 	display: flex;
 	position: absolute;
 	z-index: 2;
 	bottom: 0;
 }
-.col {
-	background-color: blue;
+
+.card-img-top {
+	aspect-ratio: 3 / 2;
+}
+
+.paket-tur {
+	padding-block: 3rem;
+	background-color: #f1f1f1;
+}
+
+.paket-tur .container {
+	gap: 3.5rem;
+
+}
+
+.karoselgambar-paket .card::after {
+	content: "";
+	background-color: #029e9d;
+	width: 0;
+	border-radius: 0.375rem;
+	height: 3px;
+	transition: 200ms ease-in-out;
+}
+
+.karoselgambar-paket .card .card-title {
+	transition: 200ms ease-in-out;
+}
+
+.karoselgambar-paket .card .card-title:hover {
+	color: #029e9d;
+}
+
+.karoselgambar-paket .card:hover::after {
+	width: 100%;
+}
+
+.hari {
+	position: absolute;
+	right: 5%;
+	bottom: 47%;
+	background-color: #029e9d;
+	padding: 0.5rem 1rem;
+	color: white;
+}
+
+.img-hover {
+	overflow: hidden;
+	transition: 5s ease-in-out;
+}
+
+.img-hover .card-img-top {
+	transition: 500ms ease-in-out;
+}
+
+.card-body {
+	border-radius: 0 0 0.375rem 0.375rem;
+	transform: translateY(0);
+	transition: transform 500ms ease-in-out;
+}
+
+.karoselgambar-paket .card:hover .card-img-top {
+	transform: scale(1.2);
+}
+
+.judulkategori {
+	background-color: #029e9d;
+	color: white;
+}
+
+.kategoricon {
+	border-radius: 0.375rem;
+	margin-inline: 1rem;
+	text-align: center;
+	padding: 0.5rem;
+	background-color: white;
+	display: flex !important;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.kategoricon p {
+	font-size: 1.2rem;
+	margin: 0;
+	transition: 200ms ease-in-out;
+}
+
+.kategoricon p:hover {
+	color: #029e9d;
 }
