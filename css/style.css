@@ -12,9 +12,8 @@
 	src: url(../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
-h5,
-h2 {
-	font-family: "play-fair-display";
+.kumpulangambar {
+	position: relative;
 }
 
 
