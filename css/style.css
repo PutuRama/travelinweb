@@ -1,5 +1,6 @@
 * {
 	font-family: "poppins-regular";
+	scroll-behavior: smooth;
 }
 
 @font-face {
@@ -19,7 +20,7 @@ h6 {
 	font-family: "play-fair-display";
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
 	.paket-tur-judul {
 		text-align: center;
 	}
@@ -28,9 +29,6 @@ h6 {
 	}
 	.judulkategori h3 {
 		padding-block: 2rem !important	;
-	}
-	.kategoricon img {
-		width: 50% !important;
 	}
 }
 
@@ -54,6 +52,9 @@ h6 {
 
 .kotak {
 	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .kotak img {
@@ -63,17 +64,33 @@ h6 {
 
 .top-lokasi-txt {
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
 	position: absolute;
 	z-index: 2;
 	bottom: 0;
+	color: white;
 }
-
+.top-lokasi-txt span {
+	background-color: #029e9d;
+	padding: 0.2rem 0.5rem;
+	border-radius: 10px;
+}
+.tempat-txt > * {
+	margin: 0;
+}
+.tempat-txt h6 {
+	font-size: 1.5rem;
+}
+.tempat-txt p {
+	font-size: 1rem;
+}
 .card-img-top {
 	aspect-ratio: 3 / 2;
 }
 
 .paket-tur {
-	padding-block: 3rem;
 	background-color: #f1f1f1;
 }
 
@@ -185,8 +202,8 @@ h6 {
 	flex-direction: column;
 }
 .kategoricon img {
-	padding: 1rem;
-	width: 70%;
+	padding-inline: 1rem;
+	padding-top: 1rem;
 }
 
 .kategoricon h6 {
@@ -198,4 +215,34 @@ h6 {
 
 .kategoricon h6:hover {
 	color: #029e9d;
+}
+
+.img-top {
+	height: 100%;
+	object-fit: cover;
+}
+.img-bottom {
+	height: 100%;
+	object-fit: cover;
+}
+.img-side {
+	height: 100vh;
+	object-fit: cover;
+}
+.kotak-top {
+	height: 50vh;
+}
+.kotak-bottom {
+	height: 50vh;
+}
+.img-icon {
+	aspect-ratio: 16 / 9;
+	height: 15vh;
+}
+.img-icon img {
+	object-fit: contain;
+}
+.tempat-txt p {
+	color: #fdc703;
+	font-family: "play-fair-display";
 }

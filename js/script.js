@@ -4,19 +4,18 @@ $(".karoselgambar-paket").slick({
 	infinite: true,
 	autoplay: true,
 	arrows: false,
-	autoplaySpeed: 5000,
-	speed: 300,
+	autoplaySpeed: 4000,
+	speed: 1500,
 	asNavFor: ".karoselarrow",
 	responsive: [
 		{
-			breakpoint: 992,
+			breakpoint: 1000,
 			settings: {
 				slidesToShow: 2,
-				slidesToScroll: 1,
 			},
 		},
 		{
-			breakpoint: 769,
+			breakpoint: 750,
 			settings: {
 				slidesToShow: 1,
 			},
@@ -25,7 +24,7 @@ $(".karoselgambar-paket").slick({
 });
 
 $(".karoselarrow").slick({
-	speed: 300,
+	speed: 1500,
 	arrows: true,
 	infinite: true,
 	asNavFor: ".karoselgambar-paket",
@@ -36,23 +35,24 @@ $(".karoselgambar-icon").slick({
 	slidesToShow: 6,
 	slidesToScroll: 1,
 	autoplay: true,
-	autoplaySpeed: 4000,
+	infinite: true,
+	autoplaySpeed: 6000,
 	responsive: [
 		{
-			breakpoint: 992,
+			breakpoint: 1000,
 			settings: {
 				slidesToShow: 3,
 				slidesToScroll: 1,
 			},
 		},
 		{
-			breakpoint: 769,
+			breakpoint: 811,
 			settings: {
 				slidesToShow: 2,
 			},
 		},
 		{
-			breakpoint: 349,
+			breakpoint: 501,
 			settings: {
 				slidesToShow: 1,
 			},
