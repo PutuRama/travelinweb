@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css" />
 		<link rel="stylesheet" href="assets/node_modules/slick-carousel/slick/slick.css" />
-		<link rel="stylesheet" href="assets/node_modules/slick-carousel/slick/slick-theme.css" />
+		<link rel="stylesheet" href="scss/myslick.css" />
 		<link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="scss/custom.css" />
@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<!-- NAVBAR -->
-		<nav class="navbar navbar-expand-lg">
+		<nav class="navbar navbar-expand-lg position-fixed z-1 w-100 bg-white">
 			<div class="container">
 				<a class="navbar-brand" href="#"><img src="assets/img/logo (1).png" alt="" /></a>
 				<button
@@ -286,7 +286,49 @@
 		</nav>
 
 		<!-- HOME/HERO -->
-		<section aria-label="my-hero" class="hero"></section>
+		<section aria-label="my-hero" class="hero">
+			<div class="hero__slick">
+				<div
+					class="hero__slick_item [ position-relative d-flex align-items-center justify-content-center ] [ link-light ]">
+					<img class="hero__img [ w-100 ]" src="assets/img/1.jpg" alt="" />
+					<div class="hero__content [ position-absolute text-center z-1 ]">
+						<h6>Amazing Places</h6>
+						<h1 class="">Make Your Trip Fun & Noted</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua
+						</p>
+						<a class="btn [ btn-primary link-light ]" href="#">Discover More</a>
+					</div>
+				</div>
+				<div
+					class="hero__slick_item [ position-relative d-flex align-items-center justify-content-center ] [ link-light ]">
+					<img class="hero__img [ w-100 ]" src="assets/img/1.jpg" alt="" />
+					<div class="hero__content [ position-absolute text-center z-1 ]">
+						<h6>Amazing Places</h6>
+						<h1 class="">Make Your Trip Fun & Noted</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua
+						</p>
+						<a class="btn [ btn-primary link-light ]" href="#">Discover More</a>
+					</div>
+				</div>
+				<div
+					class="hero__slick_item [ position-relative d-flex align-items-center justify-content-center ] [ link-light ]">
+					<img class="hero__img [ w-100 ]" src="assets/img/1.jpg" alt="" />
+					<div class="hero__content [ position-absolute text-center z-1 ]">
+						<h6>Amazing Places</h6>
+						<h1 class="">Make Your Trip Fun & Noted</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua
+						</p>
+						<a class="btn [ btn-primary link-light ]" href="#">Discover More</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- FORM -->
 		<form class="form-search"></form>

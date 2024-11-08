@@ -5,19 +5,61 @@
 	--accent-clr: #777777;
 }
 
+/* ADJUTSMENT */
 * {
-	font-family: "poppins-regular";
+	padding: 0;
+	margin: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-family: poppins-regular;
 }
 
 @font-face {
-	font-family: "poppins-regular";
+	font-family: poppins-regular;
 	src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
 }
 
 @font-face {
-	font-family: "play-fair-display";
+	font-family: play-fair-display;
 	src: url(../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
 }
+
+html {
+	color-scheme: light dark;
+}
+
+img,
+picture,
+svg,
+video {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+	font: inherit;
+}
+a {
+	text-decoration: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: play-fair-diplay;
+}
+
+/* MEDIA QUERIES */
 
 @media screen and (min-width: 992px) {
 	.dropdown-menu li {
@@ -47,3 +89,54 @@
 		display: block;
 	}
 } */
+
+/* COMPOSITION */
+
+/* UTILITY */
+
+/* BLOCK */
+.slick-next {
+	right: 1rem;
+}
+.slick-prev {
+	left: 1rem;
+}
+.slick-prev::before {
+	font-family: "FontAwesome";
+	content: "\f104";
+}
+.slick-next::before {
+	font-family: "FontAwesome";
+	content: "\f105";
+}
+.slick-prev::before,
+.slick-next::before {
+	opacity: 1;
+	border-radius: 40px;
+	padding: 0.5rem 1rem;
+	background-color: var(--secondary-clr);
+	color: var(--primary-clr);
+	font-size: 2rem;
+	transition: 300ms ease-in-out;
+}
+.slick-arrow:hover.slick-prev::before,
+.slick-arrow:hover.slick-next::before {
+	background-color: var(--tertiary-clr);
+}
+
+.hero__content > * + * {
+	margin: 1rem;
+}
+
+.hero__img {
+	height: 100vh;
+	height: 100svh;
+	object-fit: cover;
+	filter: brightness(40%);
+}
+.hero__content {
+	width: 50%;
+	border: 2px solid red;
+}
+
+/* EXCEPTION */
