@@ -5,13 +5,409 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css" />
 		<link rel="stylesheet" href="assets/node_modules/slick-carousel/slick/slick.css" />
-		<link rel="stylesheet" href="assets/node_modules/slick-carousel/slick/slick-theme.css" />
+		<link rel="stylesheet" href="scss/myslick.css" />
 		<link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="scss/custom.css" />
 		<title>Travelin</title>
 	</head>
 
 	<body>
+    		<!-- NAVBAR -->
+		<nav class="navbar navbar-expand-lg position-fixed z-1 w-100 bg-white">
+			<div class="container">
+				<a class="navbar-brand" href="#"><img src="assets/img/logo (1).png" alt="" /></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								data-bs-auto-close="outside"
+								aria-expanded="false">
+								HOME
+							</a>
+							<ul class="dropdown-menu dropdown-mainmenu">
+								<li><a class="dropdown-item" href="#">Homepage Default</a></li>
+								<li><a class="dropdown-item" href="#">Homepage 1</a></li>
+								<li><a class="dropdown-item" href="#">Homepage 2</a></li>
+								<li><a class="dropdown-item" href="#">Homepage 3</a></li>
+								<li><a class="dropdown-item" href="#">Homepage 4</a></li>
+								<li><a class="dropdown-item" href="#">Homepage 5</a></li>
+								<li class="dropend">
+									<a class="dropdown-item" role="button" href="#">Flag &raquo; </a>
+									<ul class="dropdown-menu dropdown__submenu">
+										<li>
+											<a class="dropdown-item" href="#">Flag Homepage</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Flag Grid</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Flag List</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Flag Detail</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a class="dropdown-item item-active" href="#">Cars &raquo; </a>
+									<ul class="dropdown-menu dropdown__submenu">
+										<li>
+											<a class="dropdown-item" href="#">Car Homepage</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Car Grid</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Car List</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Car Detail</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#"> Cruise &raquo; </a>
+									<ul class="dropdown-menu dropdown__submenu">
+										<li>
+											<a class="dropdown-item" href="#">Cruise Homepage</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Cruise Grid</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Cruise List</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Cruise Detail</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">ABOUT US</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+								DESTINATION
+							</a>
+							<ul class="dropdown-menu dropdown-mainmenu">
+								<li><a class="dropdown-item" href="#">Destination List</a></li>
+								<li><a class="dropdown-item" href="#">Destination Detail</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+								TOURS
+							</a>
+							<ul class="dropdown-menu dropdown-mainmenu">
+								<li>
+									<a class="dropdown-item" href="#"> Tour List &raquo; </a>
+									<ul class="dropdown-menu dropdown__submenu">
+										<li>
+											<a class="dropdown-item" href="#">Tour List Left Sidebar</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Tour List Right Sidebar</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Tour List Full Width</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#"> Tour Grid &raquo; </a>
+									<ul class="dropdown-menu dropdown__submenu">
+										<li>
+											<a class="dropdown-item" href="#">Tour List Left Sidebar</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Tour List Right Sidebar</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Tour List Full Width</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#"> Tour Single &raquo; </a>
+									<ul class="dropdown-menu dropdown__submenu">
+										<li>
+											<a class="dropdown-item" href="#">Tour List Left Sidebar</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Tour List Right Sidebar</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Tour List Full Width</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+								PAGES
+							</a>
+							<ul class="dropdown-menu dropdown-mainmenu">
+								<li><a class="dropdown-item" href="#">Our Guide</a></li>
+								<li><a class="dropdown-item" href="#">Booking</a></li>
+								<li><a class="dropdown-item" href="#">Confirmation</a></li>
+								<li>
+									<a class="dropdown-item" href="#"> Services &raquo; </a>
+									<ul class="dropdown-menu dropdown__submenu">
+										<li>
+											<a class="dropdown-item" href="#">Service List</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Service Detail</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#"> Gallery &raquo; </a>
+									<ul class="dropdown-menu dropdown__submenu">
+										<li>
+											<a class="dropdown-item" href="#">Gallery</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Gallery Masonry</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#"> Error &raquo; </a>
+									<ul class="dropdown-menu dropdown__submenu">
+										<li>
+											<a class="dropdown-item" href="#">Erorr Page 1</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Erorr Page 2</a>
+										</li>
+									</ul>
+								</li>
+								<li><a class="dropdown-item" href="#">Login|Registern</a></li>
+								<li><a class="dropdown-item" href="#">Testimonials</a></li>
+								<li><a class="dropdown-item" href="#">FAQ</a></li>
+								<li><a class="dropdown-item" href="#">Contact Us</a></li>
+								<li><a class="dropdown-item" href="#">Dashboard</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+								BLOG
+							</a>
+							<ul class="dropdown-menu dropdown-mainmenu">
+								<li>
+									<a class="dropdown-item" href="#"> Blog Grid &raquo; </a>
+									<ul class="dropdown-menu dropdown__submenu">
+										<li>
+											<a class="dropdown-item" href="#">Blog Grid 1</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Blog Grid 2</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Blog Grid 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#"> Blog List &raquo; </a>
+									<ul class="dropdown-menu dropdown__submenu">
+										<li>
+											<a class="dropdown-item" href="#">Blog List 1</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Blog List 2</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Blog List 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#"> Blog Single &raquo; </a>
+									<ul class="dropdown-menu dropdown__submenu">
+										<li>
+											<a class="dropdown-item" href="#">Blog Single 1</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Blog Single 2</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Blog Single 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<form class="d-flex align-items-center gap-3" role="search">
+						<a href="" class="mb-0 link-dark text-decoration-none">LOGIN/REGISTER</a>
+						<button
+							class="btn btn-info translate-effect left-translate text-white"
+							type="submit">
+							BOOK NOW
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<!-- HOME/HERO -->
+		<section aria-label="my-hero" class="hero">
+			<div class="hero__slick">
+				<div
+					class="hero__slick_item [ position-relative d-flex align-items-center justify-content-center ] [ link-light ]">
+					<img class="hero__img [ w-100 ]" src="assets/img/1.jpg" alt="" />
+					<div class="hero__content [ position-absolute text-center z-1 ]">
+						<h6 class="fs-5 fw-bold">Amazing Places</h6>
+						<h1 class="display-3 fw-bold">Make Your Trip Fun & Noted</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua
+						</p>
+						<a class="btn [ btn-info link-light translate-effect left-translate ]" href="#"
+							>Discover More</a
+						>
+					</div>
+				</div>
+				<div
+					class="hero__slick_item [ position-relative d-flex align-items-center justify-content-center ] [ link-light ]">
+					<img class="hero__img [ w-100 ]" src="assets/img/2.jpg" alt="" />
+					<div class="hero__content [ position-absolute text-center z-1 ]">
+						<h6 class="fs-5 fw-bold">Explore Travel</h6>
+						<h1 class="display-3 fw-bold">Start Planning Your Dream Trip</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua
+						</p>
+						<a class="btn [ btn-info link-light translate-effect left-translate ]" href="#"
+							>Read More</a
+						>
+						<a class="btn [ btn-primary link-light translate-effect left-translate ]" href="#"
+							>Contact Us</a
+						>
+					</div>
+				</div>
+				<div
+					class="hero__slick_item [ position-relative d-flex align-items-center justify-content-center ] [ link-light ]">
+					<img class="hero__img [ w-100 ]" src="assets/img/3.jpg" alt="" />
+					<div class="hero__content [ position-absolute text-center z-1 ]">
+						<h6 class="fs-5 fw-bold">Road to Travel</h6>
+						<h1 class="display-3 fw-bold">Begin Your Adventure With Us</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua
+						</p>
+						<a class="btn [ btn-info link-light translate-effect left-translate ]" href="#"
+							>Make an Enquiry</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FORM -->
+		<div class="form-search position-relative">
+			<div
+				class="search__bg w-100"
+				style="background-image: url(assets/img/shape-pat.png); background-size: contain"></div>
+			<div class="search__content [ container position-relative z-1 ]">
+				<div class="row mx-4">
+					<div class="col-lg-2 p-0">
+						<div
+							class="search__content_left [ d-flex align-items-center justify-content-center gap-4 px-3 ] [ text-light bg-info ]">
+							<i class="fa-solid fa-location-dot [ display-5 ]"></i>
+							<h3 class="m-0">Find Your Holiday</h3>
+						</div>
+					</div>
+
+					<div class="col-lg-auto p-0">
+						<div
+							class="search__content_form [ bg-light ] [ row align-items-center py-5 px-4 ]">
+							<div class="form__item col-lg-2">
+								<select name="country" id="country">
+									<option value="" disabled selected hidden>Destination</option>
+									<option value="1">Argentina</option>
+									<option value="2">Belgium</option>
+									<option value="3">Canada</option>
+									<option value="4">Denmark</option>
+								</select>
+							</div>
+							<div class="form__item col-lg-2">
+								<input type="date" />
+							</div>
+							<div class="form__item col-lg-2">
+								<select name="country" id="country">
+									<option value="" disabled selected hidden>Travel Type</option>
+									<option value="1">City Tour</option>
+									<option value="2">Family Tour</option>
+								</select>
+							</div>
+							<div class="form__item col-lg-2">
+								<select name="country" id="country">
+									<option value="" disabled selected hidden>Tour Duration</option>
+									<option value="1">5 Days</option>
+									<option value="2">7 Days</option>
+								</select>
+							</div>
+							<button
+								type="submit"
+								class="form__btn_search col-lg-2 [ btn btn-info translate-effect left-translate text-light ]">
+								<i class="fa-solid fa-magnifying-glass"></i> Search Now
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FITUR UTAMA -->
+		<section aria-label="my-features" class="fitur-utama"></section>
+
+		<!-- TOP LOKASI -->
+		<section aria-label="my-top-place" class="top-lokasi"></section>
+
+		<!-- PAKET TUR -->
+		<section aria-label="my-package" class="paket-tur"></section>
+    
 		<!-- TUR GUIDE -->
 		<section aria-label="my-tourguide" class="tur-guide">
 			<div class="text-center">
