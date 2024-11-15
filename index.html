@@ -279,7 +279,11 @@
 					</ul>
 					<form class="d-flex align-items-center gap-3" role="search">
 						<a href="" class="mb-0 link-dark text-decoration-none">LOGIN/REGISTER</a>
-						<button class="btn btn-primary text-white" type="submit">BOOK NOW</button>
+						<button
+							class="btn btn-info translate-effect left-translate text-white"
+							type="submit">
+							BOOK NOW
+						</button>
 					</form>
 				</div>
 			</div>
@@ -292,46 +296,107 @@
 					class="hero__slick_item [ position-relative d-flex align-items-center justify-content-center ] [ link-light ]">
 					<img class="hero__img [ w-100 ]" src="assets/img/1.jpg" alt="" />
 					<div class="hero__content [ position-absolute text-center z-1 ]">
-						<h6>Amazing Places</h6>
-						<h1 class="">Make Your Trip Fun & Noted</h1>
+						<h6 class="fs-5 fw-bold">Amazing Places</h6>
+						<h1 class="display-3 fw-bold">Make Your Trip Fun & Noted</h1>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 							incididunt ut labore et dolore magna aliqua
 						</p>
-						<a class="btn [ btn-primary link-light ]" href="#">Discover More</a>
+						<a class="btn [ btn-info link-light translate-effect left-translate ]" href="#"
+							>Discover More</a
+						>
 					</div>
 				</div>
 				<div
 					class="hero__slick_item [ position-relative d-flex align-items-center justify-content-center ] [ link-light ]">
-					<img class="hero__img [ w-100 ]" src="assets/img/1.jpg" alt="" />
+					<img class="hero__img [ w-100 ]" src="assets/img/2.jpg" alt="" />
 					<div class="hero__content [ position-absolute text-center z-1 ]">
-						<h6>Amazing Places</h6>
-						<h1 class="">Make Your Trip Fun & Noted</h1>
+						<h6 class="fs-5 fw-bold">Explore Travel</h6>
+						<h1 class="display-3 fw-bold">Start Planning Your Dream Trip</h1>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 							incididunt ut labore et dolore magna aliqua
 						</p>
-						<a class="btn [ btn-primary link-light ]" href="#">Discover More</a>
+						<a class="btn [ btn-info link-light translate-effect left-translate ]" href="#"
+							>Read More</a
+						>
+						<a class="btn [ btn-primary link-light translate-effect left-translate ]" href="#"
+							>Contact Us</a
+						>
 					</div>
 				</div>
 				<div
 					class="hero__slick_item [ position-relative d-flex align-items-center justify-content-center ] [ link-light ]">
-					<img class="hero__img [ w-100 ]" src="assets/img/1.jpg" alt="" />
+					<img class="hero__img [ w-100 ]" src="assets/img/3.jpg" alt="" />
 					<div class="hero__content [ position-absolute text-center z-1 ]">
-						<h6>Amazing Places</h6>
-						<h1 class="">Make Your Trip Fun & Noted</h1>
+						<h6 class="fs-5 fw-bold">Road to Travel</h6>
+						<h1 class="display-3 fw-bold">Begin Your Adventure With Us</h1>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 							incididunt ut labore et dolore magna aliqua
 						</p>
-						<a class="btn [ btn-primary link-light ]" href="#">Discover More</a>
+						<a class="btn [ btn-info link-light translate-effect left-translate ]" href="#"
+							>Make an Enquiry</a
+						>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- FORM -->
-		<form class="form-search"></form>
+		<div class="form-search position-relative">
+			<div
+				class="search__bg w-100"
+				style="background-image: url(assets/img/shape-pat.png); background-size: contain"></div>
+			<div class="search__content [ container position-relative z-1 ]">
+				<div class="row mx-4">
+					<div class="col-lg-2 p-0">
+						<div
+							class="search__content_left [ d-flex align-items-center justify-content-center gap-4 px-3 ] [ text-light bg-info ]">
+							<i class="fa-solid fa-location-dot [ display-5 ]"></i>
+							<h3 class="m-0">Find Your Holiday</h3>
+						</div>
+					</div>
+
+					<div class="col-lg-auto p-0">
+						<div
+							class="search__content_form [ bg-light ] [ row align-items-center py-5 px-4 ]">
+							<div class="form__item col-lg-2">
+								<select name="country" id="country">
+									<option value="" disabled selected hidden>Destination</option>
+									<option value="1">Argentina</option>
+									<option value="2">Belgium</option>
+									<option value="3">Canada</option>
+									<option value="4">Denmark</option>
+								</select>
+							</div>
+							<div class="form__item col-lg-2">
+								<input type="date" />
+							</div>
+							<div class="form__item col-lg-2">
+								<select name="country" id="country">
+									<option value="" disabled selected hidden>Travel Type</option>
+									<option value="1">City Tour</option>
+									<option value="2">Family Tour</option>
+								</select>
+							</div>
+							<div class="form__item col-lg-2">
+								<select name="country" id="country">
+									<option value="" disabled selected hidden>Tour Duration</option>
+									<option value="1">5 Days</option>
+									<option value="2">7 Days</option>
+								</select>
+							</div>
+							<button
+								type="submit"
+								class="form__btn_search col-lg-2 [ btn btn-info translate-effect left-translate text-light ]">
+								<i class="fa-solid fa-magnifying-glass"></i> Search Now
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- FITUR UTAMA -->
 		<section aria-label="my-features" class="fitur-utama"></section>
