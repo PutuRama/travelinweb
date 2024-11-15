@@ -34,6 +34,12 @@ h6 {
 	}
 }
 
+.kuning {
+	color: #fdc703;
+	font-family: "play-fair-display";
+
+}
+
 .Judultur-guide {
 	color: #029e9d;
 	font-family: "play-fair-display";
@@ -177,13 +183,9 @@ h6 {
 
 .img-hover {
 	overflow: hidden;
-	transition: 5s ease-in-out;
+	transition: 500ms ease-in-out;
 }
 
-.img-hover {
-	overflow: hidden;
-	transition: 5s ease-in-out;
-}
 
 .card-body {
 	border-radius: 0 0 0.375rem 0.375rem;
@@ -278,4 +280,22 @@ h6 {
 .tempat-txt p {
 	color: #fdc703;
 	font-family: "play-fair-display";
+}
+
+.img-animate {
+	filter: brightness(40%);
+	transition: 200ms ease-in-out;
+}
+
+.card:hover .img-animate {
+	transform: scale(1.2);
+
+}
+
+.ratio-kotak {
+	aspect-ratio: 1 / 1;
+}
+
+.flow>* {
+	margin-bottom: 3rem;
 }
