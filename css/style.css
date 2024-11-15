@@ -1,5 +1,6 @@
 * {
 	font-family: "poppins-regular";
+	scroll-behavior: smooth;
 }
 
 @font-face {
@@ -12,27 +13,39 @@
 	src: url(../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
-h5,
 h2,
-h3 {
+h3,
+h5,
+h6 {
 	font-family: "play-fair-display";
+}
+
+@media screen and (max-width: 992px) {
+	.paket-tur-judul {
+		text-align: center;
+	}
+
+	.karoselarrow {
+		display: none;
+	}
+
+	.judulkategori h3 {
+		padding-block: 2rem !important;
+	}
 }
 
 .Judultur-guide {
 	color: #029e9d;
 	font-family: "play-fair-display";
-
 }
 
 .warna-biru-biasa {
 	color: #029e9d;
-
 }
 
 .warnatur-guide,
 .fa-star {
 	color: #fdc703;
-
 }
 
 .kumpulangambar {
@@ -41,6 +54,9 @@ h3 {
 
 .kotak {
 	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .kotak img {
@@ -50,9 +66,31 @@ h3 {
 
 .top-lokasi-txt {
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
 	position: absolute;
 	z-index: 2;
 	bottom: 0;
+	color: white;
+}
+
+.top-lokasi-txt span {
+	background-color: #029e9d;
+	padding: 0.2rem 0.5rem;
+	border-radius: 10px;
+}
+
+.tempat-txt>* {
+	margin: 0;
+}
+
+.tempat-txt h6 {
+	font-size: 1.5rem;
+}
+
+.tempat-txt p {
+	font-size: 1rem;
 }
 
 .card-img-top {
@@ -60,40 +98,78 @@ h3 {
 }
 
 .paket-tur {
-	padding-block: 3rem;
 	background-color: #f1f1f1;
 }
 
 .paket-tur .container {
 	gap: 3.5rem;
-
 }
 
-.karoselgambar-paket .card::after {
+.underline-animate::after {
 	content: "";
 	background-color: #029e9d;
 	width: 0;
-	border-radius: 0.375rem;
+	border-radius: 0 0 0.375rem 0.375rem;
 	height: 3px;
 	transition: 200ms ease-in-out;
 }
 
-.karoselgambar-paket .card .card-title {
+.underline-animate {
 	transition: 200ms ease-in-out;
 }
 
-.karoselgambar-paket .card .card-title:hover {
+.underline-animate:hover::after {
+	width: 100%;
+}
+
+.karoselgambar-paket .card-title:hover {
 	color: #029e9d;
 }
 
-.karoselgambar-paket .card:hover::after {
-	width: 100%;
+.karoselarrow {
+	width: 2.5%;
+	right: 5%;
+}
+
+.slick-prev::before {
+	font-family: "FontAwesome";
+	/* Use the correct font-family for your icon set */
+	content: "\f104";
+	/* Left arrow icon in Font Awesome */
+	font-size: 24px;
+	/* Adjust size if needed */
+}
+
+.slick-next::before {
+	font-family: "FontAwesome";
+	content: "\f105";
+	/* Right arrow icon in Font Awesome */
+	font-size: 24px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+	border-radius: 5px;
+	padding: 0.5rem 1rem;
+	background-color: #fff;
+	color: #000;
+	font-size: 1.7rem;
+	transition: 200ms ease-in-out;
+	/* This controls the arrow icon size */
+}
+
+.slick-arrow:hover.slick-prev::before,
+.slick-arrow:focus.slick-prev::before,
+.slick-arrow:focus.slick-next::before,
+.slick-arrow:hover.slick-next::before {
+	background-color: #029e9d;
+	color: #fff;
 }
 
 .hari {
 	position: absolute;
 	right: 5%;
-	bottom: 47%;
+	top: -10%;
 	background-color: #029e9d;
 	padding: 0.5rem 1rem;
 	color: white;
@@ -124,27 +200,38 @@ h3 {
 	color: white;
 }
 
+.slick-slide {
+	margin: 0 1rem;
+}
+
+.slick-list {
+	margin: 0 -1rem;
+}
+
 .kategoricon {
 	border-radius: 0.375rem;
-	margin-inline: 1rem;
 	text-align: center;
-	padding: 0.5rem;
 	background-color: white;
 	display: flex !important;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 }
 
-.kategoricon p {
+.kategoricon img {
+	padding-inline: 1rem;
+	padding-top: 1rem;
+}
+
+.kategoricon h6 {
+	padding-bottom: 1rem;
 	font-size: 1.2rem;
 	margin: 0;
 	transition: 200ms ease-in-out;
 }
 
-.kategoricon p:hover {
+.kategoricon h6:hover {
 	color: #029e9d;
 }
+
 
 
 .judulkategori.card::after {
@@ -154,4 +241,41 @@ h3 {
 	border-radius: 0.375rem;
 	height: 3px;
 	transition: 200ms ease-in-out;
+}
+
+.img-top {
+	height: 100%;
+	object-fit: cover;
+}
+
+.img-bottom {
+	height: 100%;
+	object-fit: cover;
+}
+
+.img-side {
+	height: 100vh;
+	object-fit: cover;
+}
+
+.kotak-top {
+	height: 50vh;
+}
+
+.kotak-bottom {
+	height: 50vh;
+}
+
+.img-icon {
+	aspect-ratio: 16 / 9;
+	height: 15vh;
+}
+
+.img-icon img {
+	object-fit: contain;
+}
+
+.tempat-txt p {
+	color: #fdc703;
+	font-family: "play-fair-display";
 }
