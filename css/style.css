@@ -28,7 +28,6 @@
 	src: url(../assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
-
 html {
 	color-scheme: light dark;
 }
@@ -58,6 +57,42 @@ h4,
 h5,
 h6 {
 	font-family: play-fair-diplay;
+}
+
+.slick-slide.slide_mod {
+	margin-inline: 1rem;
+}
+.partner-slick .slick-list,
+.autoplay .slick-list {
+	margin-inline: -1rem;
+}
+.slick-next {
+	right: 1rem;
+}
+.slick-prev {
+	left: 1rem;
+}
+.slick-prev::before {
+	font-family: "FontAwesome";
+	content: "\f104";
+}
+.slick-next::before {
+	font-family: "FontAwesome";
+	content: "\f105";
+}
+.slick-prev::before,
+.slick-next::before {
+	opacity: 1;
+	border-radius: 40px;
+	padding: 0.5rem 1rem;
+	background-color: var(--secondary-clr);
+	color: var(--primary-clr);
+	font-size: 2rem;
+	transition: 300ms ease-in-out;
+}
+.slick-arrow:hover.slick-prev::before,
+.slick-arrow:hover.slick-next::before {
+	background-color: var(--tertiary-clr);
 }
 
 /* MEDIA QUERIES */
@@ -129,35 +164,24 @@ h6 {
 	right: 100%;
 }
 
+.underline-animate::after {
+	content: "";
+	background-color: #029e9d;
+	width: 0;
+	border-radius: 0 0 0.375rem 0.375rem;
+	height: 3px;
+	transition: 200ms ease-in-out;
+}
+
+.underline-animate {
+	transition: 200ms ease-in-out;
+}
+
+.underline-animate:hover::after {
+	width: 100%;
+}
+
 /* BLOCK */
-.slick-next {
-	right: 1rem;
-}
-.slick-prev {
-	left: 1rem;
-}
-.slick-prev::before {
-	font-family: "FontAwesome";
-	content: "\f104";
-}
-.slick-next::before {
-	font-family: "FontAwesome";
-	content: "\f105";
-}
-.slick-prev::before,
-.slick-next::before {
-	opacity: 1;
-	border-radius: 40px;
-	padding: 0.5rem 1rem;
-	background-color: var(--secondary-clr);
-	color: var(--primary-clr);
-	font-size: 2rem;
-	transition: 300ms ease-in-out;
-}
-.slick-arrow:hover.slick-prev::before,
-.slick-arrow:hover.slick-next::before {
-	background-color: var(--tertiary-clr);
-}
 
 .hero__content > * + * {
 	margin: 1rem;
@@ -209,30 +233,6 @@ h6 {
 }
 
 /* ALIT CODE */
-.font-play {
-	font-family: play-fair-display;
-}
-
-.kumpulangambar {
-	position: relative;
-}
-
-
-.tur-guide .card {
-	color: white;
-	border: transparent;
-}
-
-.Judultur-guide {
-	color: #029e9d;
-	font-family: "play-fair-display";
-}
-
-
-.warnatur-guide {
-	color: #fdc703;
-	font-family: "play-fair-display";
-}
 
 .img-hover {
 	overflow: hidden;
@@ -264,33 +264,8 @@ h6 {
 	height: 50px;
 }
 
-.underline-animate::after {
-	content: "";
-	background-color: #029e9d;
-	width: 0;
-	border-radius: 0 0 0.375rem 0.375rem;
-	height: 3px;
-	transition: 200ms ease-in-out;
-}
-
-.underline-animate {
-	transition: 200ms ease-in-out;
-}
-
-.underline-animate:hover::after {
-	width: 100%;
-}
-
 .text-animate:hover {
 	color: #029e9d;
-}
-
-.slick-slide {
-	margin-inline: 1rem;
-}
-
-.slick-list {
-	margin-inline: -1rem;
 }
 
 .slick-item {
